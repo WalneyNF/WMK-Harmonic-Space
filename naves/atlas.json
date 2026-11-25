@@ -1,0 +1,49 @@
+{
+  "id": "atlas",
+  "name": "Atlas",
+  "nation": "arkhon",
+  "tier": 1,
+  "role": "Cargueira",
+  "model": 2,
+  "maxSpeed": 75,
+  "acceleration": 25,
+  "lateralSpeed": 20,
+  "capacity": 320,
+  "bankDegrees": 30,
+  "bankIn": 7,
+  "bankOut": 2.8,
+  "yawRate": 1.1,
+  "verticalSpeed": 35,
+  "camera": {
+    "distance": 48,
+    "height": 18,
+    "lookAhead": 15
+  },
+  "engines": [
+    [
+      -5.62,
+      0,
+      -8.3
+    ],
+    [
+      5.62,
+      0,
+      -8.3
+    ],
+    [
+      0,
+      0,
+      -7.2
+    ]
+  ],
+  "particleRate": 75,
+  "price": 0,
+  "requires": null,
+  "description": "Transporte de carga e manutenção espacial.",
+  "accent": [
+    1,
+    0.56,
+    0.16
+  ],
+  "scale": 1
+}

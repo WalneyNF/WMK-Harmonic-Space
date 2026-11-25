@@ -1,0 +1,49 @@
+{
+  "id": "ferrox",
+  "name": "Ferrox",
+  "nation": "arkhon",
+  "tier": 2,
+  "role": "Mineradora",
+  "model": 5,
+  "maxSpeed": 85,
+  "acceleration": 31,
+  "lateralSpeed": 24,
+  "capacity": 420,
+  "bankDegrees": 30,
+  "bankIn": 7,
+  "bankOut": 2.8,
+  "yawRate": 1.25,
+  "verticalSpeed": 38,
+  "camera": {
+    "distance": 55.199999999999996,
+    "height": 20.7,
+    "lookAhead": 17.25
+  },
+  "engines": [
+    [
+      -6.47,
+      0,
+      -9.54
+    ],
+    [
+      6.47,
+      0,
+      -9.54
+    ],
+    [
+      0,
+      0,
+      -8.28
+    ]
+  ],
+  "particleRate": 85,
+  "price": 350,
+  "requires": "atlas",
+  "description": "Extração de asteroides, depósitos e guindastes.",
+  "accent": [
+    1,
+    0.56,
+    0.16
+  ],
+  "scale": 1.15
+}

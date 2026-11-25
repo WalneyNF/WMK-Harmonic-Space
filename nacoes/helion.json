@@ -1,0 +1,13 @@
+{
+  "id": "helion",
+  "name": "Confederação Hélion",
+  "tagline": "Exploração, ciência e autonomia",
+  "color": "#49d9ff",
+  "accent": [
+    0.1,
+    0.78,
+    1
+  ],
+  "emblem": "✦",
+  "style": "Casco luminoso, sensores avançados"
+}

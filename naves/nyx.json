@@ -1,0 +1,49 @@
+{
+  "id": "nyx",
+  "name": "Nyx",
+  "nation": "vespera",
+  "tier": 2,
+  "role": "Caça tático",
+  "model": 4,
+  "maxSpeed": 220,
+  "acceleration": 95,
+  "lateralSpeed": 75,
+  "capacity": 175,
+  "bankDegrees": 30,
+  "bankIn": 7,
+  "bankOut": 2.8,
+  "yawRate": 1.25,
+  "verticalSpeed": 38,
+  "camera": {
+    "distance": 55.199999999999996,
+    "height": 20.7,
+    "lookAhead": 17.25
+  },
+  "engines": [
+    [
+      -7.5,
+      0,
+      -9.54
+    ],
+    [
+      7.5,
+      0,
+      -9.54
+    ],
+    [
+      0,
+      0,
+      -8.28
+    ]
+  ],
+  "particleRate": 85,
+  "price": 350,
+  "requires": "vega",
+  "description": "Nave compacta com propulsão vetorial.",
+  "accent": [
+    0.61,
+    0.38,
+    0.98
+  ],
+  "scale": 1.15
+}

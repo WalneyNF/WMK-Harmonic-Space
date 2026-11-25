@@ -1,0 +1,49 @@
+{
+  "id": "colossus",
+  "name": "Colossus",
+  "nation": "arkhon",
+  "tier": 3,
+  "role": "Nave industrial",
+  "model": 8,
+  "maxSpeed": 65,
+  "acceleration": 18,
+  "lateralSpeed": 17,
+  "capacity": 1000,
+  "bankDegrees": 30,
+  "bankIn": 7,
+  "bankOut": 2.8,
+  "yawRate": 1.25,
+  "verticalSpeed": 38,
+  "camera": {
+    "distance": 67.19999999999999,
+    "height": 25.2,
+    "lookAhead": 21.0
+  },
+  "engines": [
+    [
+      -7.87,
+      0,
+      -11.62
+    ],
+    [
+      7.87,
+      0,
+      -11.62
+    ],
+    [
+      0,
+      0,
+      -10.08
+    ]
+  ],
+  "particleRate": 95,
+  "price": 850,
+  "requires": "ferrox",
+  "description": "Plataforma modular de produção e abastecimento.",
+  "accent": [
+    1,
+    0.56,
+    0.16
+  ],
+  "scale": 1.4
+}

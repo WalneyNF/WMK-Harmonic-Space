@@ -1,0 +1,49 @@
+{
+  "id": "vega",
+  "name": "Vega",
+  "nation": "vespera",
+  "tier": 1,
+  "role": "Interceptora",
+  "model": 1,
+  "maxSpeed": 180,
+  "acceleration": 75,
+  "lateralSpeed": 55,
+  "capacity": 160,
+  "bankDegrees": 30,
+  "bankIn": 7,
+  "bankOut": 2.8,
+  "yawRate": 1.1,
+  "verticalSpeed": 35,
+  "camera": {
+    "distance": 48,
+    "height": 18,
+    "lookAhead": 15
+  },
+  "engines": [
+    [
+      -6.52,
+      0,
+      -8.3
+    ],
+    [
+      6.52,
+      0,
+      -8.3
+    ],
+    [
+      0,
+      0,
+      -7.2
+    ]
+  ],
+  "particleRate": 75,
+  "price": 0,
+  "requires": null,
+  "description": "Alta velocidade, manobras rápidas e patrulhas.",
+  "accent": [
+    0.61,
+    0.38,
+    0.98
+  ],
+  "scale": 1
+}

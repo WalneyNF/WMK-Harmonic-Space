@@ -2,62 +2,65 @@
 
 ![Logotipo WMK Harmonic Space](assets/logo.svg)
 
-**Versão 0.5.0 — 25/11/2026** · Protótipo em **HTML, CSS, JavaScript e WebGL**, sem Docker ou dependência de IA.
+**Versão 0.5.0 — 25/11/2026** · Protótipo independente desenvolvido com **HTML, CSS, JavaScript e WebGL**, sem Docker, compilação, bibliotecas CDN ou dependência de IA.
 
 **Autor:** Walney Moreira Klein — [walneyk@hotmail.com](mailto:walneyk@hotmail.com)
 
-## Conceito
+## Ideia do jogo
 
-**Jogo de espaçonaves 3D** focado em pilotagem, hangar, exploração e progressão tecnológica. A música **não faz parte da jogabilidade normal**: é apenas um mecanismo de **recarga emergencial da bateria**, disponível quando a energia fica crítica.
+Um simulador de espaçonaves centrado em **pilotagem, hangar, evolução tecnológica, exploração e futura construção de naves**. O sistema musical é **somente uma recarga auxiliar de emergência** quando a energia ficar crítica; não faz parte da interface normal de voo.
 
-## Como testar
+## Como começar
 
-1. Clique em **Code → Download ZIP**, extraia o projeto e abra `index.html` no Chrome ou Edge com WebGL.
-2. Escolha uma das três nações fictícias e uma nave no hangar.
-3. Clique em **Testar voo** e pilote com os comandos abaixo.
-4. Abra a **Árvore tecnológica** para experimentar os níveis e desbloqueios.
+1. Baixe o projeto como ZIP no GitHub e extraia numa pasta.
+2. Abra `index.html` no Google Chrome/Edge com WebGL ativo.
+3. Escolha uma das **três facções espaciais originais** no hangar.
+4. Inspecione uma nave disponível, selecione **Testar voo** e experimente os controles.
+5. Utilize o botão **Árvore tecnológica** para pesquisar modelos de nível II e III.
+
+Não é necessário iniciar um servidor. Os JSONs são editáveis na pasta `naves/` e podem ser importados individualmente pelo hangar; o arquivo `naves.js` mantém um catálogo incorporado para uso offline.
 
 ## Controles
 
-| Tecla | Função |
+| Controle | Função |
 |---|---|
-| W / S | Acelerar / reduzir velocidade |
-| A / D | Deslocamento lateral com inclinação visual de até 30° para o mesmo lado; retorno suave ao soltar |
-| Q / E | Guinada: girar o bico à esquerda / direita |
+| W / S | Acelerar / desacelerar |
+| A / D | Deslocar lateralmente e inclinar até 30° para o mesmo lado |
+| Q / E | Girar o bico à esquerda / direita (guinada) |
 | C / X | Subir / descer |
 | Espaço | Frear |
-| J, K, L, Ç / ; | Somente quando a recarga de emergência estiver aberta |
+| J, K, L, Ç / ; | Pulsos musicais **exclusivamente na recarga de emergência** |
 
-## Nações, tipos de naves e níveis
+A inclinação é suavizada por interpolação exponencial (*lerp* independente de FPS) e retorna lentamente à horizontal ao soltar a tecla. A câmera externa permanece atrás e acima da nave; distância e altura são configuráveis por modelo.
 
-| Nação fictícia | Especialização | Nível I | Nível II | Nível III |
+## Nações fictícias e árvore tecnológica
+
+| Facção | Identidade | Nível I | Nível II | Nível III |
 |---|---|---|---|---|
-| Confederação Hélion | Exploração e ciência | Orion — exploradora | Lyra — pesquisa | Aurora Prime — colonizadora |
-| Domínio Véspera | Mobilidade e defesa | Vega — interceptora | Nyx — caça tático | Spectra — fragata |
-| União Arkheon | Indústria e mineração | Atlas — cargueira | Ferrox — mineradora | Colossus — industrial |
+| Confederação Hélion | Exploração e ciência | Orion | Lyra | Aurora Prime |
+| Domínio Véspera | Velocidade e defesa | Vega | Nyx | Spectra |
+| União Arkheon | Mineração e indústria | Atlas | Ferrox | Colossus |
 
-As nove naves possuem JSON individual em `naves/`. As facções possuem definição em `nacoes/`. A árvore tecnológica exige nave anterior e créditos de pesquisa. O botão de créditos de teste existe apenas para facilitar a avaliação da versão.
+As naves de nível I são liberadas desde o início. Cada linha requer a nave anterior e créditos de pesquisa. O hangar possui um botão de **créditos de teste** para validar níveis superiores sem esperar missões futuras. Os modelos de nível II e III ainda utilizam geometrias procedurais derivadas dos três chassis básicos — são visualmente diferenciados, **não modelos GLB finalizados**.
 
-## Organização
+## Arquivos importantes
 
-- `index.html`: interface e cena principal
-- `game.js`: controles, voo, energia, missão e recarga
-- `space3d.js`: renderizador WebGL e geometria 3D
-- `hangar.js`: garagem, nações e árvore tecnológica
-- `naves.js`: catálogo embutido para funcionamento offline
-- `naves/*.json`, `nacoes/*.json`: dados individuais
-- `assets/logo.svg` e `assets/logo.png`: identidade visual
-- [`pesquisa.html`](pesquisa.html): jogos espaciais de referência
-- [`roadmap.html`](roadmap.html): plano de desenvolvimento
-- [Manual primeiro contato](manuais/primeiro-contato.html)
-- [Histórico de alterações](CHANGELOG.md)
+- `index.html` — interface de pilotagem, hangar e árvore tecnológica.
+- `game.js` — movimento, energia, missão, controles e recarga de emergência.
+- `space3d.js` — renderizador WebGL, cenários, hangar e geometrias procedurais.
+- `hangar.js` — nações, catálogo, pesquisa e salvamento da frota.
+- `naves/*.json` — parâmetros físicos e características individuais de **9 espaçonaves**.
+- `nacoes/*.json` — definições das **3 facções fictícias**.
+- `naves.js` — catálogo compilado para execução offline.
+- `assets/logo.svg` e `assets/logo.png` — marca original do projeto.
+- `pesquisa.html` — análise dos jogos espaciais de referência (não estão incluídos nem copiados).
+- `roadmap.html` — prioridades e estágios do projeto.
+- `manuais/primeiro-contato.html` — primeiro voo e uso do hangar.
 
-## Situação e limitações
+## Limitações da versão
 
-A v0.5.0 apresenta modelos procedurais, hangar industrial, seleção de facção, árvore tecnológica inicial, A/D corrigidos, Q/E independentes e recarga emergencial contextual. **Ainda não existem interiores, modelos GLB acabados, física orbital completa, mineração, combate, multiplayer ou construção modular**. Esses recursos estão planejados no roadmap.
+O renderizador é um WebGL básico próprio; ainda não há modelos 3D externos, texturas PBR, física orbital, colisão realista, interiores navegáveis, batalhas, mineração, mercado ou multiplayer. A árvore e os créditos são um **protótipo funcional de progressão**, com recompensa inicial de atracagem e créditos de teste. A versão foi criada para validar ergonomia, direção visual e arquitetura de conteúdo antes de investir em ativos detalhados.
 
-## Licença e créditos
+## Licença
 
-Código e materiais visuais originais sob [MIT](LICENSE).
-
-**Walney Moreira Klein — walneyk@hotmail.com**
+Código original e identidade visual deste projeto sob a [licença MIT](LICENSE). Nomes e propriedades dos jogos de referência pertencem aos respectivos titulares.

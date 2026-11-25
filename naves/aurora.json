@@ -1,0 +1,49 @@
+{
+  "id": "aurora",
+  "name": "Aurora Prime",
+  "nation": "helion",
+  "tier": 3,
+  "role": "Colonizadora",
+  "model": 6,
+  "maxSpeed": 100,
+  "acceleration": 30,
+  "lateralSpeed": 25,
+  "capacity": 650,
+  "bankDegrees": 30,
+  "bankIn": 7,
+  "bankOut": 2.8,
+  "yawRate": 1.25,
+  "verticalSpeed": 38,
+  "camera": {
+    "distance": 67.19999999999999,
+    "height": 25.2,
+    "lookAhead": 21.0
+  },
+  "engines": [
+    [
+      -6.3,
+      0,
+      -11.62
+    ],
+    [
+      6.3,
+      0,
+      -11.62
+    ],
+    [
+      0,
+      0,
+      -10.08
+    ]
+  ],
+  "particleRate": 95,
+  "price": 850,
+  "requires": "lyra",
+  "description": "Suporte de vida e módulos de colonização.",
+  "accent": [
+    0.1,
+    0.78,
+    1
+  ],
+  "scale": 1.4
+}

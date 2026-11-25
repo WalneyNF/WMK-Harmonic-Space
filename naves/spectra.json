@@ -1,0 +1,49 @@
+{
+  "id": "spectra",
+  "name": "Spectra",
+  "nation": "vespera",
+  "tier": 3,
+  "role": "Fragata",
+  "model": 7,
+  "maxSpeed": 170,
+  "acceleration": 60,
+  "lateralSpeed": 50,
+  "capacity": 440,
+  "bankDegrees": 30,
+  "bankIn": 7,
+  "bankOut": 2.8,
+  "yawRate": 1.25,
+  "verticalSpeed": 38,
+  "camera": {
+    "distance": 67.19999999999999,
+    "height": 25.2,
+    "lookAhead": 21.0
+  },
+  "engines": [
+    [
+      -9.13,
+      0,
+      -11.62
+    ],
+    [
+      9.13,
+      0,
+      -11.62
+    ],
+    [
+      0,
+      0,
+      -10.08
+    ]
+  ],
+  "particleRate": 95,
+  "price": 850,
+  "requires": "nyx",
+  "description": "Escolta de longo alcance e defesa orbital.",
+  "accent": [
+    0.61,
+    0.38,
+    0.98
+  ],
+  "scale": 1.4
+}

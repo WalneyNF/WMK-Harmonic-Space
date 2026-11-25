@@ -1,0 +1,49 @@
+{
+  "id": "orion",
+  "name": "Orion",
+  "nation": "helion",
+  "tier": 1,
+  "role": "Exploradora",
+  "model": 0,
+  "maxSpeed": 110,
+  "acceleration": 45,
+  "lateralSpeed": 35,
+  "capacity": 200,
+  "bankDegrees": 30,
+  "bankIn": 7,
+  "bankOut": 2.8,
+  "yawRate": 1.1,
+  "verticalSpeed": 35,
+  "camera": {
+    "distance": 48,
+    "height": 18,
+    "lookAhead": 15
+  },
+  "engines": [
+    [
+      -4.5,
+      0,
+      -8.3
+    ],
+    [
+      4.5,
+      0,
+      -8.3
+    ],
+    [
+      0,
+      0,
+      -7.2
+    ]
+  ],
+  "particleRate": 75,
+  "price": 0,
+  "requires": null,
+  "description": "Reconhecimento orbital e exploração de curto alcance.",
+  "accent": [
+    0.1,
+    0.78,
+    1
+  ],
+  "scale": 1
+}
